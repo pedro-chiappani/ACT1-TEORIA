@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación y título del sitio aquí -->
+        <nav>
+            <ul>
+                <li><a href="contacto.html">Información de contacto</a></li>
+                <li><a href="mantenimiento.html">Información de quien mantiene el sitio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Categorías</a>
+                    <div class="dropdown-content">
+                        <a href="caricaturas.html">Caricaturas</a>
+                        <a href="paisajes.html">Paisajes</a>
+                        <a href="anime.html">Anime</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <form action="index.html" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <!-- Pie de página aquí -->
+        <p>&copy; 2023 Pedro Chiappani</p>
+    </footer>
+</body>
+</html>
